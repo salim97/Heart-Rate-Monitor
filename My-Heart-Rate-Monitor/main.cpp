@@ -1,14 +1,24 @@
+#include <QApplication>
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
+#include <QQmlContext>
+#include <QQuickStyle>
+
+#include "mynetwork.h"
 
 int main(int argc, char *argv[])
 {
-    QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
+//    QApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 
-    QGuiApplication app(argc, argv);
+    QApplication app(argc, argv);
 
     QQmlApplicationEngine engine;
-    engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
+
+    MyNetwork myNetwork ;
+    engine.rootContext()->setContextProperty("myNetwork", &myNetwork);
+
+
+    engine.load(QUrl(QStringLiteral("qrc:/QML/main.qml")));
     if (engine.rootObjects().isEmpty())
         return -1;
 

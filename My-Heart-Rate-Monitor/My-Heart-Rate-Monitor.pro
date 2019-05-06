@@ -1,4 +1,4 @@
-QT += quick
+QT += quick quickcontrols2 charts
 CONFIG += c++11
 
 # The following define makes your compiler emit warnings if you use
@@ -12,10 +12,18 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
+HEADERS += \
+    mynetwork.h \
+    mypropertyhelper.h
+
 SOURCES += \
-        main.cpp
+        main.cpp \
+    mynetwork.cpp
 
 RESOURCES += qml.qrc
+
+OTHER_FILES += \
+            QML/*.qml
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH =
