@@ -3,3 +3,5 @@ Simple cross platform application to display heartrate, oximetry received from e
 
 
 https://www.instagram.com/p/BnuH-MYhWWY/
+
+2019-05-06 : update soon in 24h
