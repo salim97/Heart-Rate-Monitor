@@ -12,7 +12,7 @@ in this project i'm using MAX30100
 | MAX30100 | ESP8266 |
 |----------|---------|
 | GND      | GND     |
-| VIN      | 3.3V    |
+| VIN      | 3V3     |
 | SCL      | D1      |
 | SDA      | D2      |
 
