@@ -19,6 +19,7 @@ in this project i'm using MAX30100
 
 ![](https://github.com/salim97/Heart-Rate-Monitor/blob/master/Schematic%20esp8266%20max30100%20.png)
 
+See also: https://easyeda.com/benabadji.mohammed.salim/Heart-Rate-Monitor
 
 # Copyright © 2018-2019
 
