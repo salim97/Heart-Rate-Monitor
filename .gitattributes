@@ -3,3 +3,4 @@
 *.qml linguist-vendored=false
 *.c linguist-vendored=false
 *.h linguist-vendored=false
+*.c linguist-language=C++
